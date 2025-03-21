@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Koenigsegg Agera RS</title>
+    <style>
+        body {
+            display: block;
+            margin: 0px 30px 0px 30px;
+        }
+
+        img {
+            width: 60%;
+            height: 60%;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 50px;
+            background-color: #fff;
+            border: 1px solid white;
+            text-decoration: none;
+        }
+
+        button:hover {
+            /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); */
+            background-color: rgba(128, 128, 128, 0.479);
+            /* border: 1px solid rgba(128, 128, 128, 0.232); */
+        }
+
+        .details {
+            border: none;
+            position: absolute;
+            text-align: justify;
+            top: 115px;
+            left: 925px;
+            color: #333333;
+            font-family: "Gilroy", Sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-right: 50px;
+
+        }
+
+        .buga img {
+            width: 4%;
+            height: 5%;
+        }
+
+        .buga {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            background-color: white;
+        }
+
+        .name {
+            font-size: 24px;
+        }
+
+        #period {
+            float: left;
+            width: 25%;
+            height: 280px;
+            /* padding-left: 20px; */
+        }
+
+        #price {
+            float: right;
+            width: 50%;
+            height: 280px;
+            /* padding-left: 20px; */
+        }
+        #available{
+            float:left;
+            width:60%;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        hr {
+            margin-top: 0px;
+            border: none;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+
+        #period p {
+            margin-left: 20px;
+        }
+
+        #price p {
+            margin-left: 20px;
+        }
+
+        h3 {
+            margin: 0px 0px 0px 0px;
+        }
+        .booking {
+            background-color: #f9f9f900;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 500px;
+        }
+
+        .booking h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .booking input[type="text"],
+        .booking input[type="email"],
+        .booking input[type="tel"],
+        .booking input[type="date"],
+        .booking input[type="submit"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .booking input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .booking input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="window.location.href='cardetails.html'"><img src="arrow.jpg" width="15%"></button>
+    </div>
+    <div class="buga">
+        <img src="klogo.png" class="logo">
+        <h1 class="name">Koenigsegg Agera RS</h1>
+    </div>
+
+    <img src="koin.jpg" alt="Swift Car">
+    <div class="details">
+        Unleash pure adrenaline with the Koenigsegg Agera RS, a hypercar masterpiece that defies expectations. With its
+        lightweight carbon fiber construction and aerodynamic design, the Agera RS achieves unparalleled speed and
+        agility. Powered by a twin-turbocharged V8 engine delivering over 1,000 horsepower, it accelerates from 0 to 60
+        mph in breathtaking fashion. The Agera RS boasts advanced technology and precision engineering, offering a
+        driving experience unlike any other. As a limited-production marvel, each Agera RS is a rare gem, combining
+        performance, luxury, and exclusivity in perfect harmony. Experience automotive perfection with the Koenigsegg
+        Agera RS.
+        <div id="booking" class="booking">
+            <center>
+                <h2>Book Now</h2>
+            </center>
+            <center>
+                <form action="booking_handler.php" method="post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+
+                    <label for="pickup-date">Pickup Date:</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required><br><br>
+
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date" name="return-date" required><br><br>
+
+                    <input type="submit" value="Make a Booking">
+                </form>
+            </center>
+            
+        </div>
+    </div>
+    <h1>RENTAL PRICING</h1>
+    <div id="period">
+        <h3 class="rd">PERIOD</h3>
+        <hr width="850px" align="left" size="3.78px" color="brown">
+        <p style="font-size: 20px;">1 DAY</p>
+        <hr width="850px" align="left" size="3.78px" color="brown">
+        <p style="font-size: 20px;">2 DAYs</p>
+        <hr width="850px" align="left" size="3.78px" color="brown">
+        <p style="font-size: 20px;">3-4 DAYs</p>
+        <hr width="850px" align="left" size="3.78px" color="brown">
+        <p style="font-size: 20px;">4-7 DAYs</p>
+        <hr width="850px" align="left" size="3.78px" color="brown">
+    </div>
+    <div id="price">
+        <h3 class="rd">PRICE</h3>
+
+        <p style="font-size: 20px;">15000</p>
+
+        <p style="font-size: 20px;">30000</p>
+
+        <p style="font-size: 20px;">45000</p>
+
+        <p style="font-size: 20px;">60000</p>
+
+    </div>
+    <div id = "available">
+        <p>The car is available for daily, weekly and monthly rental. You can also check our hourly offers page</p>
+    </div>
+</body>
+
+</html>
